@@ -1,0 +1,155 @@
+/* Color Palette */
+
+:root{
+    --dark-clr: #0E1428;
+    --dark-dark-clr: #11172D;
+    --dark-light-clr:#1B264B;
+    --light-clr: #F3F7F0;
+    --primary-clr: #a93f54;
+    --primary-light-clr: #C7576D;
+    --primary-dark-clr:#8A2E40;
+    --success-clr: #3066BE;
+    --xp-clr: #8DE5F7;
+    --health-clr: #CC667A;
+    --gold-clr: #F2D77C;
+}
+
+/* Browser Reset */
+
+*,::before,::after{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+@media(max-width:500px){
+    .stat{
+        font-size:3vw;
+    }
+}
+
+@media (min-width: 700px){
+
+    body{
+        font-size:1.2rem;
+    }
+}
+/* Game Styling */
+
+body{
+    background-color:var(--dark-clr);
+    color:var(--light-clr);
+    height:100vh;
+    font-family: sans-serif;
+
+}
+
+h1{
+    font-size:3rem;
+    margin: 0 auto;
+    text-align:center;
+    margin-top: 2.5em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+h1 span{
+    color:var(--primary-clr);
+}
+
+#game{
+    margin: 5% auto;
+    border:5px solid var(--dark-light-clr);
+    border-radius: 10px;
+    width:70vw;
+    max-width: 700px;
+    height:auto;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,.2);
+}
+
+/* Player Stats */
+
+#stat-bar{
+    display:flex;
+    justify-content:space-evenly;
+}
+
+.stat{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding:.5em;
+    margin:.5em;
+    width:100%;
+    background-color:var(--dark-light-clr);
+    border-radius: 150px;
+    font-size:1rem;
+}
+
+
+
+#xpStat{
+    color:var(--xp-clr);
+}
+
+#healthStat{
+    color:var(--health-clr);
+}
+
+#goldStat{
+    color:var(--gold-clr);
+}
+
+/* Monster Stats */
+
+#monsterStats{
+    display:none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:white;
+    padding:.1em;
+}
+
+.container{
+    display:flex;
+    justify-content:center;
+}
+
+.m-stat{
+    padding:.5em;
+    font-size:.9rem;
+    border-radius:150px;
+    background-color:var(--primary-clr);
+    border: 2px solid var(--primary-dark-clr);
+    margin:.5em;
+    width:100%;
+}
+
+/* Text */
+
+#text{
+    margin:1em 2em 1.5em;
+    background-color:var(--dark-clr);
+    color:var(--light-clr);
+    line-height: 1.5rem;
+    word-spacing: .1rem;
+}
+
+/* Button Styling */
+
+#buttons{
+    display:flex;
+    justify-content:space-evenly;
+    border-top: 5px solid var(--dark-light-clr);
+    padding: 0 .3em;
+}
+
+.btn{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:.9rem;
+    font-weight:300;
+    background: var(--primary-light-clr);
+    color:var(--light-clr);
+    padding:.4em;
+    border:none;
+    border-radius:2px;
+    cursor:pointer;
+    width:100%;
+    margin: .5em .2em;
+}

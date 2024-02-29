@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slay the Dragon</title>
+</head>
+<body>
+    <h1>Slay the <span>Dragon</span></h1>
+    <div id="game">
+        <div id="stat-bar">
+            <span class="stat">Xp: <strong><span id="xpStat">0</span></strong></span>
+            <span class="stat">Health: <strong><span id="healthStat">100</span></strong></span>
+            <span class="stat">Gold: <strong><span id="goldStat">50</span></strong></span>
+        </div>
+
+
+        <div id="text">
+            Welcome to Slay the Dragon! Your goal is to beat the Dragon. Along the way you can encounter other monsters to gain xp and gold. The gold can then be used to buy health potions or better weapons at the shop. Good Luck!
+        </div>
+        <div id="monsterStats">
+            <div class="container">
+                <span class="m-stat">Name: <strong><span id="monsterNameStat"></span></strong></span>
+                <span class="m-stat">Hp: <strong><span id="monsterHealthStat"></span></strong></span>
+                <span class="m-stat">Level: <strong><span id="monsterLevelStat"></span></strong></span>
+            </div>
+        </div>
+        <div id="buttons">
+            <button class="btn" id="btn1">Go Store</button>
+            <button class="btn" id="btn2">Go Cave</button>
+            <button class="btn" id="btn3">Slay Dragon</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
